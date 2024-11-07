@@ -1,0 +1,27 @@
+#include<stdio.h>
+
+
+int main(){
+
+	//Declaration 
+	char name[25];
+	int id;
+	char department[20];
+	float salary;
+	char email[50];
+	
+	//Initializing 
+	  strcpy(name, "John Doe");
+	  id = 12345;
+	  strcpy(department, "Human Resources");
+	salary = 55000.50;
+	strcpy(email, "john.doe@company.com");
+	
+	//Printing the values of the field;
+	printf("Name: %s\n", &name);
+	printf("ID: %d\n",  &id);
+	printf("Department: %s\n", &department);
+	printf("Salary: %f\n", &salary);
+	printf("Email: %s\n", &email);
+	return 0;
+}
